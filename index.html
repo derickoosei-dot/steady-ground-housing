@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Steady Ground Housing</title>
+  <meta name="description" content="Steady Ground Housing LLC provides sober-living housing in Las Vegas and Henderson, Nevada." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f4efe6;
+      --ink: #1c241c;
+      --muted: #5b6458;
+      --line: #d7cec0;
+      --accent: #3e5a40;
+      --card: #fffaf3;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: "Source Sans 3", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+    header {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 28px 24px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 16px;
+    }
+    .mark {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-weight: 600;
+      font-size: 22px;
+      letter-spacing: 0.02em;
+    }
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 14px;
+      margin-left: 18px;
+    }
+    nav a:hover { color: var(--ink); }
+    main { max-width: 920px; margin: 0 auto; padding: 48px 24px 80px; }
+    h1 {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: clamp(42px, 8vw, 72px);
+      font-weight: 500;
+      line-height: 1.05;
+      margin: 48px 0 18px;
+      max-width: 14ch;
+    }
+    .lede {
+      font-size: 20px;
+      color: var(--muted);
+      max-width: 42ch;
+      margin-bottom: 40px;
+    }
+    .actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #f7f3ea;
+      text-decoration: none;
+      padding: 12px 18px;
+      border-radius: 4px;
+      font-weight: 600;
+      font-size: 15px;
+    }
+    .btn.secondary {
+      background: transparent;
+      color: var(--ink);
+      border: 1px solid var(--line);
+    }
+    section {
+      margin-top: 72px;
+      padding-top: 28px;
+      border-top: 1px solid var(--line);
+    }
+    h2 {
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 28px;
+      font-weight: 600;
+      margin: 0 0 12px;
+    }
+    p { margin: 0 0 14px; color: var(--muted); max-width: 62ch; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+    article {
+      background: var(--card);
+      border: 1px solid var(--line);
+      padding: 20px;
+      min-height: 140px;
+    }
+    article strong { display: block; margin-bottom: 8px; color: var(--ink); }
+    address { font-style: normal; color: var(--ink); }
+    footer {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 24px;
+      color: var(--muted);
+      font-size: 13px;
+      border-top: 1px solid var(--line);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="mark">Steady Ground</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <h1>A stable place to live while you rebuild.</h1>
+    <p class="lede">Steady Ground Housing provides sober-living homes in Las Vegas and Henderson. Housing first. Dignity intact.</p>
+    <div class="actions">
+      <a class="btn" href="tel:+17028999387">Call 702-899-9387</a>
+      <a class="btn secondary" href="mailto:derick.o.osei@gmail.com">Email us</a>
+    </div>
+
+    <section id="about">
+      <h2>What we are</h2>
+      <p>We operate residential housing for people who need a structured, sober place to live. This is housing, not a clinic. We do not provide medical treatment, counseling, or detox.</p>
+      <div class="grid">
+        <article>
+          <strong>Housing</strong>
+          Quiet, well-kept homes with clear house rules and a calm environment.
+        </article>
+        <article>
+          <strong>Las Vegas / Henderson</strong>
+          Nevada homes, locally operated. One address for the company. Homes as they come online.
+        </article>
+        <article>
+          <strong>Straightforward</strong>
+          If we can help, we will say so. If we cannot, we will say that too.
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>For operators, owners, and referrals.</p>
+      <address>
+        Steady Ground Housing LLC<br />
+        3753 Howard Hughes Parkway, Suite 200<br />
+        Las Vegas, NV 89169<br />
+        <a href="tel:+17028999387">702-899-9387</a><br />
+        <a href="mailto:derick.o.osei@gmail.com">derick.o.osei@gmail.com</a>
+      </address>
+    </section>
+  </main>
+  <footer>
+    Steady Ground Housing LLC · Nevada limited liability company · Formed 2026
+  </footer>
+</body>
+</html>
