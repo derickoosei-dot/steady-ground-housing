@@ -33,6 +33,7 @@
       justify-content: space-between;
       align-items: baseline;
       gap: 16px;
+      flex-wrap: wrap;
     }
     .mark {
       font-family: "Cormorant Garamond", Georgia, serif;
@@ -40,11 +41,15 @@
       font-size: 22px;
       letter-spacing: 0.02em;
     }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+    }
     nav a {
       color: var(--muted);
       text-decoration: none;
       font-size: 14px;
-      margin-left: 18px;
     }
     nav a:hover { color: var(--ink); }
     main { max-width: 920px; margin: 0 auto; padding: 48px 24px 80px; }
@@ -104,6 +109,33 @@
     }
     article strong { display: block; margin-bottom: 8px; color: var(--ink); }
     address { font-style: normal; color: var(--ink); }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 20px;
+    }
+    @media (min-width: 700px) {
+      .gallery { grid-template-columns: repeat(3, 1fr); }
+    }
+    .gallery figure {
+      margin: 0;
+      background: var(--card);
+      border: 1px solid var(--line);
+    }
+    .gallery img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      object-position: center;
+    }
+    .gallery figcaption {
+      font-size: 13px;
+      color: var(--muted);
+      padding: 10px 12px 12px;
+    }
     footer {
       max-width: 920px;
       margin: 0 auto;
@@ -119,6 +151,7 @@
     <div class="mark">Steady Ground</div>
     <nav>
       <a href="#about">About</a>
+      <a href="#homes">Homes</a>
       <a href="#apply">Apply</a>
       <a href="#house-manager">House Manager</a>
       <a href="#contact">Contact</a>
@@ -130,7 +163,8 @@
     <div class="actions">
       <a class="btn" href="#apply">Apply</a>
       <a class="btn" href="#house-manager">Apply: House Manager</a>
-      <a class="btn" href="sms:+17023812025">Text (702) 381-2025</a>
+      <a class="btn" href="tel:+17023812025">Call or text (702) 381-2025</a>
+      <a class="btn secondary" href="sms:+17023812025">Text us</a>
       <a class="btn secondary" href="mailto:info@steadygroundhousing.com">Email info@</a>
     </div>
 
@@ -153,13 +187,60 @@
       </div>
     </section>
 
+    <section id="homes">
+      <h2>Inside our homes</h2>
+      <p>Furnished rooms, shared living spaces, and community amenities at our Las Vegas homes.</p>
+      <div class="gallery">
+        <figure>
+          <img src="images/01-shared-bedroom.jpg" width="799" height="599" alt="Shared bedroom with three twin beds, nightstands, and a window" loading="lazy" decoding="async" />
+          <figcaption>Shared bedroom</figcaption>
+        </figure>
+        <figure>
+          <img src="images/02-shared-bedroom-window.jpg" width="848" height="1131" alt="Shared bedroom with two twin beds and a curtained window" loading="lazy" decoding="async" />
+          <figcaption>Shared bedroom</figcaption>
+        </figure>
+        <figure>
+          <img src="images/03-living-room-fireplace.jpg" width="599" height="799" alt="Living room with a brick fireplace, tall windows, and carpeted floors" loading="lazy" decoding="async" />
+          <figcaption>Living room</figcaption>
+        </figure>
+        <figure>
+          <img src="images/04-kitchen.jpg" width="848" height="1131" alt="Kitchen with a double sink, dishwasher, stove, and a window over the counter" loading="lazy" decoding="async" />
+          <figcaption>Kitchen</figcaption>
+        </figure>
+        <figure>
+          <img src="images/05-kitchen-fridge.jpg" width="848" height="1131" alt="Kitchen with a refrigerator, stove, and a laundry area with a washer and dryer" loading="lazy" decoding="async" />
+          <figcaption>Kitchen and laundry</figcaption>
+        </figure>
+        <figure>
+          <img src="images/06-bathroom-double-vanity.jpg" width="1131" height="848" alt="Bathroom with a double vanity, two sinks, and light cabinets" loading="lazy" decoding="async" />
+          <figcaption>Bathroom</figcaption>
+        </figure>
+        <figure>
+          <img src="images/07-bathroom.jpg" width="848" height="1131" alt="Bathroom with a bathtub and shower, toilet, and a double vanity" loading="lazy" decoding="async" />
+          <figcaption>Bathroom</figcaption>
+        </figure>
+        <figure>
+          <img src="images/08-bedroom.jpg" width="599" height="799" alt="Bedroom with a twin bed, nightstands, and a window with dark curtains" loading="lazy" decoding="async" />
+          <figcaption>Bedroom</figcaption>
+        </figure>
+        <figure>
+          <img src="images/09-community-pool.jpg" width="848" height="1131" alt="Fenced community pool at one of our homes, with trees and neighboring roofs beyond the fence" loading="lazy" decoding="async" />
+          <figcaption>Community pool at one of our homes</figcaption>
+        </figure>
+        <figure>
+          <img src="images/10-community-court.jpg" width="848" height="1131" alt="Fenced outdoor community court with a basketball hoop at one of our homes" loading="lazy" decoding="async" />
+          <figcaption>Community court at one of our homes</figcaption>
+        </figure>
+      </div>
+    </section>
+
     <section id="apply">
       <h2>Apply for a room</h2>
       <h3 style="font-size:18px;margin:20px 0 8px;color:var(--ink)">Step 1: Fill out our free Room Interest Form</h3>
       <div class="actions">
         <a class="btn" href="https://forms.gle/q4xCHoR8MSJC4gQR8" target="_blank" rel="noopener">Room Interest Form</a>
       </div>
-      <p style="color:var(--muted);font-size:14px;margin-top:10px">Free, takes about 5 minutes. We'll reach out within 1-2 business days.</p>
+      <p style="color:var(--muted);font-size:14px;margin-top:10px">Free, takes about 5 minutes. We'll reach out as soon as we can, usually the same day.</p>
       <h3 style="font-size:18px;margin:28px 0 8px;color:var(--ink)">Step 2: If we invite you to apply</h3>
       <p>Our homes: northwest Las Vegas (89108) and central-west Las Vegas (89107, two homes). Rooms are open to anyone in recovery and are filled first come, first served. Tell us on the form which area you prefer.</p>
       <p><strong>Fully furnished · Utilities included · Driveway and off-street parking</strong></p>
@@ -188,7 +269,7 @@
         Steady Ground Housing LLC<br />
         Mailing address: 1887 Whitney Mesa Dr #3978<br />
         Henderson, NV 89014<br />
-        Text <a href="sms:+17023812025">(702) 381-2025</a> (text only)<br />
+        Call, text, or email <a href="tel:+17023812025">(702) 381-2025</a><br />
         <a href="mailto:info@steadygroundhousing.com">info@steadygroundhousing.com</a><br />
         <a href="mailto:payments@steadygroundhousing.com">payments@steadygroundhousing.com</a><br />
         Referral partners: <a href="mailto:partners@steadygroundhousing.com">partners@steadygroundhousing.com</a>
