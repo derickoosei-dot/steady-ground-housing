@@ -136,6 +136,27 @@
       color: var(--muted);
       padding: 10px 12px 12px;
     }
+    .actions.apply-step1 {
+      align-items: center;
+      gap: 20px;
+    }
+    .apply-qr {
+      margin: 0;
+      text-align: center;
+    }
+    .apply-qr img {
+      display: block;
+      width: 120px;
+      height: 120px;
+    }
+    .apply-qr figcaption {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+    @media (max-width: 640px) {
+      .apply-qr { display: none; }
+    }
     footer {
       max-width: 920px;
       margin: 0 auto;
@@ -162,6 +183,7 @@
     <p class="lede">Steady Ground Housing provides sober-living homes in Las Vegas. Recovery-first, substance-free housing. Dignity intact.</p>
     <div class="actions">
       <a class="btn" href="#apply">Apply</a>
+      <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfRAj7qQdkItzrAkXB6D7L9Q75Qp4yE7eTZYTX4Er0mFevkLA/viewform?usp=pp_url&amp;entry.787690233=Website" target="_blank" rel="noopener">Request a room</a>
       <a class="btn" href="#house-manager">Apply: House Manager</a>
       <a class="btn" href="tel:+17023812025">Call or text (702) 381-2025</a>
       <a class="btn secondary" href="sms:+17023812025">Text us</a>
@@ -237,8 +259,14 @@
     <section id="apply">
       <h2>Apply for a room</h2>
       <h3 style="font-size:18px;margin:20px 0 8px;color:var(--ink)">Step 1: Fill out our free Room Interest Form</h3>
-      <div class="actions">
-        <a class="btn" href="https://forms.gle/q4xCHoR8MSJC4gQR8" target="_blank" rel="noopener">Room Interest Form</a>
+      <div class="actions apply-step1">
+        <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfRAj7qQdkItzrAkXB6D7L9Q75Qp4yE7eTZYTX4Er0mFevkLA/viewform?usp=pp_url&amp;entry.787690233=Website" target="_blank" rel="noopener">Room Interest Form</a>
+        <figure class="apply-qr">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRAj7qQdkItzrAkXB6D7L9Q75Qp4yE7eTZYTX4Er0mFevkLA/viewform?usp=pp_url&amp;entry.787690233=Website" target="_blank" rel="noopener">
+            <img src="images/qr-room-interest-website.png" width="120" height="120" alt="QR code: scan to open the Room Interest Form" />
+          </a>
+          <figcaption>Scan to request a room</figcaption>
+        </figure>
       </div>
       <p style="color:var(--muted);font-size:14px;margin-top:10px">Free, takes about 5 minutes. We'll reach out as soon as we can, usually the same day.</p>
       <h3 style="font-size:18px;margin:28px 0 8px;color:var(--ink)">Step 2: If we invite you to apply</h3>
@@ -246,7 +274,7 @@
       <p><strong>Fully furnished · Utilities included · Driveway and off-street parking</strong></p>
       <p>Screening is done in writing. If you're a good fit, we'll text or email you a private application link for your home. We share the home's address once a tour or move-in is confirmed.</p>
       <div class="actions">
-        <a class="btn" href="https://forms.gle/q4xCHoR8MSJC4gQR8" target="_blank" rel="noopener">Start with the Room Interest Form</a>
+        <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfRAj7qQdkItzrAkXB6D7L9Q75Qp4yE7eTZYTX4Er0mFevkLA/viewform?usp=pp_url&amp;entry.787690233=Website" target="_blank" rel="noopener">Start with the Room Interest Form</a>
       </div>
       <p style="color:var(--muted);font-size:14px">Applications and background checks are handled securely by RentSpree. Any screening fee is shown in RentSpree before you pay. If you need help with the fee, tell us on the form.</p>
       <p>Apply for a bed: <a href="mailto:applications@steadygroundhousing.com">applications@steadygroundhousing.com</a></p>
